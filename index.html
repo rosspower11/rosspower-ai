@@ -163,12 +163,25 @@
   <div class="mx-auto max-w-3xl px-6 text-center">
     <p class="eyebrow">Let's talk</p>
     <h2 class="mx-auto mt-6 font-display text-4xl font-extrabold leading-[1.02] md:text-6xl">Bring AI to your stage or your team.</h2>
-    <p class="mx-auto mt-6 max-w-xl text-lg text-white/55">Tell me about your event or your goals and I'll come back with how I can help.</p>
-    <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-      <a href="mailto:ross@aipowered.xyz" class="bg-white px-9 py-4 font-mono text-[0.72rem] font-medium uppercase tracking-[0.2em] text-black hover:bg-white/90">Book me to speak</a>
-      <a href="#" class="border border-white/25 px-9 py-4 font-mono text-[0.72rem] font-medium uppercase tracking-[0.2em] text-white hover:bg-white/10">Book a 20-min call</a>
-    </div>
+    <p class="mx-auto mt-6 max-w-xl text-lg text-white/55">Pick a time below and tell me about your event or your goals — I'll come back with how I can help.</p>
   </div>
+  <!-- Cal.com inline embed begins -->
+  <div class="mx-auto mt-12 max-w-4xl px-6">
+    <div style="width:100%;min-height:640px;overflow:hidden" id="my-cal-inline-book-ross-to-speak-at-your-event"></div>
+  </div>
+  <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "book-ross-to-speak-at-your-event", {origin:"https://app.cal.com"});
+    Cal.config = Cal.config || {};
+    Cal.config.forwardQueryParams = true;
+    Cal.ns["book-ross-to-speak-at-your-event"]("inline", {
+      elementOrSelector:"#my-cal-inline-book-ross-to-speak-at-your-event",
+      config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
+      calLink: "rosspower/book-ross-to-speak-at-your-event",
+    });
+    Cal.ns["book-ross-to-speak-at-your-event"]("ui", {"hideEventTypeDetails":false,"layout":"month_view","theme":"dark"});
+  </script>
+  <!-- Cal.com inline embed ends -->
 </section>
 
 <footer class="border-t border-white/10 bg-black">
